@@ -12,3 +12,8 @@ follow [here](https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-w
 https://github.com/Paperspace/jupyter-docker-stacks/tree/master/tensorflow-notebook
 
 datascience-notebook and tensorflow-notebook
+
+### AHK
+
+1. [How to start up automatically](https://autohotkey.com/docs/FAQ.htm#Startup)
+2. `.ahk` under `Autohotkey`
