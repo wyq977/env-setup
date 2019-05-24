@@ -1,8 +1,13 @@
-env-setup
+# env-setup
 
 ## gitignore
 
-add under 
+see [here](https://gist.github.com/subfuzion/db7f57fff2fb6998a16c) for details.
+
+```shell
+# mac
+git config --global core.excludesfile ~/Desktop/github/env-setup/.gitignore
+```
 
 ## Win10
 
