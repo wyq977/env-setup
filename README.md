@@ -9,6 +9,19 @@ see [here](https://gist.github.com/subfuzion/db7f57fff2fb6998a16c) for details.
 git config --global core.excludesfile ~/Desktop/github/env-setup/.gitignore
 ```
 
+## Mac
+
+### Docker 
+
+#### Portainer
+
+Some issues can be resolved. 
+
+Thansk to:
+1. https://github.com/docker/kitematic/issues/1010
+2. https://github.com/docker/for-mac/issues/770
+3. https://github.com/penglongli/blog/issues/68
+
 ## Win10
 
 ### VS Code remote
