@@ -23,11 +23,20 @@ if [ -z "$1" ]
     else
         DIR=$1
         echo "Mounting $DIR to /home/jovyan/mount/  "
+fi
 
+if [ -z "$2" ]
+    then
+        NB='datascience-notebook'
+        echo "No argument supplied, using $NB"
+    else
+        NB=$2
+        echo "Using $NB"
 fi
 
 docker run -it -d -p 8888:8888 \
+    --name $NB \
     -e NB_UID=$(id -u) -e NB_GID=$(id -g) \
     -v $DIR:/home/jovyan/mount/ \
-    jupyter/datascience-notebook \
+    jupyter/$NB \
     start-notebook.sh --NotebookApp.password= '' --NotebookApp.token=''

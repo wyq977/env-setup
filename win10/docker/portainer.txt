@@ -1,0 +1,61 @@
+Setup
+=====
+
+Enable docker without TLS
+-------------------------
+
+Docker settings -> General -> Expose docker daemon on tcp://...
+
+Create Looback Address
+----------------------
+
+netsh interface portproxy add v4tov4 listenaddress=10.0.75.1 listenport=2375 connectaddress=127.0.0.1 connectport=2375
+
+Allow Loopback through Firewall
+-------------------------------
+
+netsh advfirewall firewall add rule name="Docker" dir=in action=allow protocol=TCP localport=2375 enable=yes profile=domain,private,public
+
+(Manual version)
+
+Firewall inbound rule:
+	Rule Type: Port
+	Protocol and Ports: TCP, 2375
+	Action: Allow
+	Profile: Domain, Private & Public
+	Nname: docker-portainer
+
+Edit Rule
+	Scope, Remote IP address: 127.0.0.1
+
+Run Portainer Image	
+-------------------
+
+docker volume create portainer_data
+
+ipconfig -> Ethernet adapter vEthernet (DockerNAT): -> IPv4 Address -> eg: 10.0.75.1:2375
+
+(auth version)
+
+docker run -d -p 3040:9000 --name portainer --restart=always -v portainer_data:/data portainer/portainer
+
+Endpoint is: 10.0.75.1:2375
+
+(no auth version)
+
+docker run -d -p 3040:9000 --name portainer --restart=always -v portainer_data:/data portainer/portainer --no-auth -H tcp://10.0.75.1:2375
+
+start http://localhost:3040
+
+Remove
+======
+
+docker stop portainer
+
+docker rm portainer
+
+docker rmi portainer/portainer
+
+netsh interface portproxy reset
+
+netsh advfirewall firewall delete rule name="Docker"
