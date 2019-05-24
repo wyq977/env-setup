@@ -9,6 +9,10 @@ see [here](https://gist.github.com/subfuzion/db7f57fff2fb6998a16c) for details.
 git config --global core.excludesfile ~/Desktop/github/env-setup/.gitignore
 ```
 
+## Conda
+
+This may solve the solver issue when installing packages ![link](https://medium.com/@marius.v.niekerk/conda-metachannel-f962241c9437)
+
 ## Mac
 
 ### Docker 
@@ -33,6 +37,10 @@ Using the docker from jupyter, the rest of the packages can be installed locally
 Ref:
 1. https://docs.docker.com/compose/compose-file/ **Remeber to set ENV in windows** `COMPOSE_CONVERT_WINDOWS_PATHS=1`
 2. https://code.visualstudio.com/docs/remote/containers args and options can be added when start up
+
+###
+
+https://stackoverflow.com/questions/37100358/docker-compose-exited-with-code-0
 
 ### VS Code setting sync
 
