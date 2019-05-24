@@ -1,0 +1,9 @@
+// See https://aka.ms/vscode-remote/devcontainer.json for format details.
+{	
+	"name": "testing-vscode",
+	"service": "test", // matching the service in compose
+	"extensions": ["ms-python.python"], // vscode extension in the container
+	"dockerComposeFile": "docker-compose.yml",
+	"workspaceFolder": "/home/jovyan/work/",
+	"shutdownAction": "stopCompose", // stop the container when close vs code
+}
