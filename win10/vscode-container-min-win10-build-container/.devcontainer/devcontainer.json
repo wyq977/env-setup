@@ -1,0 +1,9 @@
+// See https://aka.ms/vscode-remote/devcontainer.json for format details.
+{	
+	"name": "testing-ldmm",
+	"service": "vscode-container", // matching the service in compose
+	"extensions": ["ms-python.python"], // vscode extension in the container
+	"dockerComposeFile": "docker-compose.yml",
+	"workspaceFolder": "/home/testing-ldmm/",
+	"shutdownAction": "stopCompose", // stop the container when close vs code
+}

@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  vscode-container:
+    image: testing-ldmm:latest
+    container_name: testing-ldmm
+    environment: 
+      - COMPOSE_CONVERT_WINDOWS_PATHS=1
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ../:/home/testing-ldmm/ # change the mount
+    ports:
+      - 5005:5005
+    tty: true # 
