@@ -11,7 +11,7 @@ git config --global core.excludesfile ~/Desktop/github/env-setup/.gitignore
 
 ## Conda
 
-This may solve the solver issue when installing packages ![link](https://medium.com/@marius.v.niekerk/conda-metachannel-f962241c9437)
+This may solve the solver issue when installing packages [link](https://medium.com/@marius.v.niekerk/conda-metachannel-f962241c9437)
 
 ## Mac
 
