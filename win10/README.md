@@ -49,3 +49,5 @@ Guide here: https://code.visualstudio.com/blogs/2020/03/02/docker-in-wsl2
 I guess it's a good idea not to download docker in different distro in WSL2 as it might mess up the networking system.
 
 Sth to read to make the terminal nicer: https://www.hanselman.com/blog/HowToSetUpDockerWithinWindowsSystemForLinuxWSL2OnWindows10.aspx
+
+WSL2 install: https://docs.microsoft.com/en-us/windows/wsl/wsl2-install
