@@ -4,11 +4,16 @@ Since the docker for windows as of this point cannot install on Win 10 home so I
 
 ## Download and install iso
 
-As per this site https://www.windowscentral.com/windows-10-preview-build-19582-rolls-out-fast-ring-insiders, you can download from microsoft directly using their creation tools but I perfer [refus](https://rufus.ie/)
+As per this site https://www.windowscentral.com/windows-10-preview-build-19582-rolls-out-fast-ring-insiders, you can download from microsoft directly using their creation tools but I perfer [refus](https://rufus.ie/) but it should be noted that FAT32 format drive are compatible. (wyq-surface-pro)
+
+Create recovery drive here for surface pro 6: https://support.microsoft.com/en-us/help/4023512/surface-creating-and-using-a-usb-recovery-drive
 
 ## Personal Software
 
 After install and changing the windows name
+
+* Chrome
+* Google Drive
 
 ### Entertainment 
 
@@ -36,3 +41,5 @@ After install and changing the windows name
 4. ParaView
 
 ## Setting Docker and WSL2
+
+Install WSL2 see here: https://www.youtube.com/watch?v=ilKQHAFeQR0
