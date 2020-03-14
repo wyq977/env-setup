@@ -43,3 +43,7 @@ After install and changing the windows name
 ## Setting Docker and WSL2
 
 Install WSL2 see here: https://www.youtube.com/watch?v=ilKQHAFeQR0
+
+Guide here: https://code.visualstudio.com/blogs/2020/03/02/docker-in-wsl2
+
+I guess it's a good idea not to download docker in different distro in WSL2 as it might mess up the networking system.
