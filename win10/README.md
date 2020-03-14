@@ -8,6 +8,8 @@ As per this site https://www.windowscentral.com/windows-10-preview-build-19582-r
 
 Create recovery drive here for surface pro 6: https://support.microsoft.com/en-us/help/4023512/surface-creating-and-using-a-usb-recovery-drive
 
+Put iso to usb: https://docs.microsoft.com/en-us/archive/blogs/askcore/creating-bootable-usb-drive-for-uefi-computers
+
 ## Personal Software
 
 After install and changing the windows name
