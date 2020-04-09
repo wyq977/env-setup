@@ -51,6 +51,8 @@ After install and changing the windows name.  Use `wyq-surface-pro` for the devi
 * Docker for windows
 * VSCode
 
+I am deleting the config of complicated `docker-compose.yml` and `.vscode` as examples like [this cpp project](https://github.com/Microsoft/vscode-remote-try-cpp) combined with Docker images are easier to follow and maintain in the future.
+
 ### Setting Docker and WSL2
 
 * Install WSL2, [Youtube](https://www.youtube.com/watch?v=ilKQHAFeQR0)
