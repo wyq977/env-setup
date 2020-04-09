@@ -1,0 +1,142 @@
+// To view the default settings, hold "alt" while clicking on the "Settings" button.
+// For documentation on these settings, see: https://aka.ms/terminal-documentation
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "defaultProfile": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+    "profiles": {
+        "list": [
+            {
+                "guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+                "hidden": false,
+                "startingDirectory": "//wsl$/Ubuntu-18.04/home/wyq977",
+                "name": "Ubuntu-18.04",
+                "source": "Windows.Terminal.Wsl",
+                "colorScheme": "Ubuntu [Dark]",
+                "historySize": 9001,
+                "snapOnInput": true,
+                "cursorColor": "#FFFFFF",
+                "cursorShape": "bar",
+                "fontFace": "Fira Code",
+                "fontSize": 12,
+                "acrylicOpacity": 0.85,
+                "useAcrylic": true,
+                "padding": "10, 10, 10, 10"
+            },
+            {
+                // Make changes here to the powershell.exe profile
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "name": "Windows PowerShell",
+                "commandline": "powershell.exe",
+                "hidden": false
+            },
+            {
+                // Make changes here to the cmd.exe profile
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "name": "cmd",
+                "commandline": "cmd.exe",
+                "hidden": false
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": false,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            }
+            // {
+            //     "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+            //     "hidden": false,
+            //     "name": "Azure Cloud Shell",
+            //     "source": "Windows.Terminal.Azure"
+            // }
+        ]
+    },
+    // Add custom color schemes to this array
+    "schemes": [
+        {
+            "name": "Ubuntu [Dark]",
+            "background": "#2E3436",
+            "foreground": "#B5BBAE",
+            "black": "#2E3436",
+            "blue": "#3465A4",
+            "cyan": "#06989A",
+            "green": "#4E9A06",
+            "purple": "#75507B",
+            "red": "#AE5E5E",
+            "white": "#B5BBAE",
+            "yellow": "#C4A000",
+            "brightBlack": "#696B67",
+            "brightBlue": "#729FCF",
+            "brightCyan": "#2EC3C3",
+            "brightGreen": "#79C32E",
+            "brightPurple": "#AD7FA8",
+            "brightRed": "#F49797",
+            "brightWhite": "#FBFBFB",
+            "brightYellow": "#FCE94F"
+        }
+    ],
+    // Add any keybinding overrides to this array.
+    // To unbind a default keybinding, set the command to "unbound"
+    "keybindings": [
+        {
+            "command": "newTab",
+            "keys": [
+                "ctrl+t"
+            ]
+        },
+        {
+            "command": "closeTab",
+            "keys": [
+                "ctrl+w"
+            ]
+        },
+        {
+            "command": "find",
+            "keys": [
+                "ctrl+f"
+            ]
+        },
+        {
+            "command": "copy",
+            "keys": [
+                "ctrl+shift+c"
+            ]
+        },
+        {
+            "command": "splitHorizontal",
+            "keys": [
+                "ctrl+-"
+            ]
+        },
+        {
+            "command": "splitVertical",
+            "keys": [
+                "ctrl+\\"
+            ]
+        },
+        {
+            "command": {
+                "action": "switchToTab",
+                "argument": 1
+            },
+            "keys": [
+                "ctrl+alt+1"
+            ]
+        },
+        {
+            "command": {
+                "action": "switchToTab",
+                "argument": 2
+            },
+            "keys": [
+                "ctrl+alt+2"
+            ]
+        }
+        // { "command": { "action": "switchToTab", "argument": 3}, "keys": ["ctrl+3"]},
+        // { "command": { "action": "switchToTab", "argument": 4}, "keys": ["ctrl+4"]},
+        // { "command": { "action": "switchToTab", "argument": 5}, "keys": ["ctrl+5"]},
+        // { "command": { "action": "switchToTab", "argument": 6}, "keys": ["ctrl+6"]},
+        // { "command": { "action": "switchToTab", "argument": 7}, "keys": ["ctrl+7"]},
+        // { "command": { "action": "switchToTab", "argument": 8}, "keys": ["ctrl+8"]},
+        // { "command": { "action": "switchToTab", "argument": 3}, "keys": ["ctrl+2"]}
+    ]
+}
