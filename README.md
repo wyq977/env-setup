@@ -2,7 +2,7 @@
 
 Since the docker for windows as of this point cannot install on Win 10 home so I was forced to re-install my OS on my surface pro 6.
 
-Overall, working on my surface pro 6 is as good as some reviews online would claim. First the keyboard that comes with it is NOT great. The layout is far too small for anyone with a normal grid size. Plus the version I am getting comes with only 8Gb of RAM, which in itself is already tight for daily tasks with junkware such as Chrome. I like the fact that I can basically run any environment I packaged (on docker) but the Hyper-V services on the background is constantly taking up 40% of the RAM, I might consider using other GNU/Linux on my main gig in the near future. Again, don't want invest too much time customizing my stuffs on the PC, but it always has a lot of clicking and typing on macOS and Windows so I might consider [Manjaro](https://manjaro.org) given the fact I can just use a `dotfiles` to save all my config.
+Overall, working on my surface pro 6 is __NOT__ as good as some reviews online would claim. First the keyboard that comes with it is NOT great. The layout is far too small for anyone with a normal grid size. Plus the version I am getting comes with only 8Gb of RAM, which in itself is already tight for daily tasks with junkware such as Chrome. I like the fact that I can basically run any environment I packaged (on docker) but the Hyper-V services on the background is constantly taking up 40% of the RAM, I might consider using other GNU/Linux on my main gig in the near future. Again, don't want invest too much time customizing my stuffs on the PC, but it always has a lot of clicking and typing on macOS and Windows so I might consider [Manjaro](https://manjaro.org) given the fact I can just use a `dotfiles` to save all my config.
 
 I have got to try [tmux](https://github.com/tmux/tmux) sometimes
 
@@ -41,7 +41,7 @@ After install and changing the windows name.  Use `wyq-surface-pro` for the devi
 * ShareX _Don't forget to change the save directory to match with the Google Drive_
 * AutoHotKey
 * Motrix
-* Clover for tab view explorer
+* Clover _for tab view explorer_
 * 7-zip
 * Windows Terminal _Replace the profile under [here](software-config/windows-terminal/profiles.json)_
 
